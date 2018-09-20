@@ -50,3 +50,10 @@ So, remove some n-grams based on occurence frequencies
  - *High grequecny n-grams* : call as *stop-words* -> so need to be removed
  - *low frequency n-grams* : typo, can be overfit -> so need to be removed
  - *Medium frequency n-grams*: those are good n-grams
+
+TF-IDF (Term Frequency Inverse Document Frequency)
+ - tf(t,d) - frequency for term (or n-gram) t in document d
+ - wighting sceme: binary, ...
+ - idf(t, D) = log (N/[formular])
+ - tfidf(t,d,D0 = tf(t,d) * idf(t,D)
+ - a high weeight in TF-IDF is reached by a high term frequency and a low document frenqucy of the erm in the hole colelciton of documents
