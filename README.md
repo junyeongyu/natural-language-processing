@@ -12,3 +12,28 @@ Semantic slot filling: LSTM
  - Defining the model
  - Training ..
 
+Linguistic knowledge in NLP
+NLP Pyramid
+- Pragmatics
+- Semantics
+- Syntax
+- Morphology
+
+Libraries and tools
+ - NLTK
+ - Stanford parser
+ - spaCy
+ ...
+
+Linguistic knowledge
+ - ideas and evaluation
+ - WordNet, BabelNet, etc..
+ 
+Linguistic knowledge + Deep learning
+ - Task: Question answering /reasoing
+ - Linigusitic links: co-reference (red), hypernyms (green)
+ - Method: DAG-LSTM
+ 
+Syntax: constituency tree
+Sentiment analysis
+
