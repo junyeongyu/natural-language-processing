@@ -37,3 +37,16 @@ Linguistic knowledge + Deep learning
 Syntax: constituency tree
 Sentiment analysis
 
+Bag of words (BOW)
+ - Le's count occurences of a particluar token in our text
+ - Motivation: we are looking for marker words like "exceelt" or "disappointed"
+ - for each token we will have a feature colume, this is called **text vectorization**
+ - but problem is it is losing order and couters are not normalized
+
+Let's preserve some ordering (n-grams): problem is too many features
+ - ex) a hu..
+ 
+So, remove some n-grams based on occurence frequencies
+ - *High grequecny n-grams* : call as *stop-words* -> so need to be removed
+ - *low frequency n-grams* : typo, can be overfit -> so need to be removed
+ - *Medium frequency n-grams*: those are good n-grams
