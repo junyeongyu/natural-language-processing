@@ -86,7 +86,20 @@ What is a context?
  - Then W = C and X is a symmetic matrix
 
 Explicit and implicit matrix factorization
+
 Singular Value Decomposition (SVD)
+
 Truncated SVD
  - Keep only first k components: X_k = U_k * SUM_k * V_kYt
 
+Weighted squared loss: GloVe
+ - Fill X with log n_u_v and ry another objective
+
+Word prediction: skip-gram model
+ - Predict context words given a focus word:
+ - Model each probability with a softmax:
+ - Log-likelihood maximization:
+
+Skip-gram Negative Sampling (SGNS)
+ - instad of predicting a word for another word, predict "yes" or "no" for word pairs:
+ 
