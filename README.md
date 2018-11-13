@@ -85,5 +85,8 @@ What is a context?
  - contexts are words form a sliding window
  - Then W = C and X is a symmetic matrix
 
- 
+Explicit and implicit matrix factorization
+Singular Value Decomposition (SVD)
+Truncated SVD
+ - Keep only first k components: X_k = U_k * SUM_k * V_kYt
 
