@@ -23,7 +23,7 @@ def find_analogies(w1, w2, w3):
   king = word2vec[w1]
   man = word2vec[w2]
   woman = word2vec[w3]
-  v0 = king - main + woman
+  v0 = king - man + woman
   
   min_dist = float('inf')
   best_word = ''
@@ -45,7 +45,7 @@ def find_analogies(w1, w2, w3):
   king = word2vec[w1]
   man = word2vec[w2]
   woman = word2vec[w3]
-  v0 = king - main + woman
+  v0 = king - man + woman
 
   ## What?
   distances = pairwise_distances(v0.reshape(1, D), embedding, metric=metic).reshape(V)
@@ -65,6 +65,5 @@ def find_analogies(w1, w2, w3):
     print("neighbors of: %s" % w)
     for idx in idxs:
       print("\t&s" % idx2word[idx])
-    
 
-
+# load in pre-trained
