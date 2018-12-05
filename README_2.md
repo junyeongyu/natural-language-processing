@@ -27,3 +27,10 @@
 ## Trigrams and N-grams
 * Tigrams: The quick dream
 
+## Example
+* P("brown" | "quick") = count(quick -> brown) / count(quick)
+* How many times does "quick" -> "brown" appear in my set of document?
+* How many times does "quick" appear in my set of documents?
+* Divide these 2!
+
+## 
