@@ -33,4 +33,19 @@
 * How many times does "quick" appear in my set of documents?
 * Divide these 2!
 
-## 
+## What is a "set of documents"?
+* Sometimes we call this our training corpus
+
+## Bayes Rule
+* (A -> B -> C) = p(C | A -> B)p(A -> B) = p(C | A -> B)p(B | A)p(A)
+* p(A) = count(A)/ corpus length
+* Trigram: p(C | A, B) = count(A -> B -> C) / count(A -> B)
+
+## Add-one smoothing (avoid zero)
+* Note: V = vocabulary size = number of distinct words
+* p_smooth(B | A) = (count (A -> B) + 1) / (count (A) + V)
+
+
+
+
+
