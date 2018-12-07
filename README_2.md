@@ -45,7 +45,10 @@
 * Note: V = vocabulary size = number of distinct words
 * p_smooth(B | A) = (count (A -> B) + 1) / (count (A) + V)
 
-
-
-
+## The Markov Assumption
+* What I see now depends only on what I saw in the previous step
+* p(E | A,B,C,D) = p(E | D)
+* My try => bigram: p(A, B, C, D, E) = p(E | A, B, C, D)p(D | A, B, C)p(C | A, B)p(B | A)p(A)
+* answer => bigram: P(E | D)p(D | C)p(C | B)p(B | A)p(A)
+* It is easy to model like "lazy turtle", "lazy cat", and "laze rabbit" than "The quick brown fox jpms over the lazy turtle"
 
