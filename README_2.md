@@ -48,7 +48,19 @@
 ## The Markov Assumption
 * What I see now depends only on what I saw in the previous step
 * p(E | A,B,C,D) = p(E | D)
-* My try => bigram: p(A, B, C, D, E) = p(E | A, B, C, D)p(D | A, B, C)p(C | A, B)p(B | A)p(A)
-* answer => bigram: P(E | D)p(D | C)p(C | B)p(B | A)p(A)
+* My try => bigram: p(A, B, C, D, E) = p(E | A, B, C, D)p(D | A, B, C)p(C | A, B)p(B | A)p(A) => Wrong, it is not biagrm
+* answer => bigram: p(E | D)p(D | C)p(C | B)p(B | A)p(A)
 * It is easy to model like "lazy turtle", "lazy cat", and "laze rabbit" than "The quick brown fox jpms over the lazy turtle"
+
+## Exercise (Not yet)
+* Load in the Brown corpus using NLTK
+* Create a bigram language model with add-one smoothing
+ -> I used downcasing but you can apply any preprocessing you want
+* Test your model by:
+ -> Comparing the probability of a real sentence (from the corpus) vs. a fake sentence (ramdomly generated words)
+ -> Compare it to a sentence you type in (but that doesn't apper in the corpus)
+* p(w_1, ..., w_T) = p(w_1) * T||t=2 * p(w_t | w_(t-1))
+* logp(w1, ..., w_T) = logp(w_1) + T|||t=2 * logp(w_t | w_(t-1)
+* Normalize each sentence
+
 
